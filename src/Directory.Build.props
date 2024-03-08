@@ -1,0 +1,21 @@
+<Project>
+  <Import Project="..\Directory.Build.props" />
+
+  <PropertyGroup>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <IsPackable>True</IsPackable>
+    <IncludeSymbols>True</IncludeSymbols>
+    <Nullable>enable</Nullable>
+    <Features>nullablePublicOnly;strict</Features>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Meziantou.Polyfill" Version="1.0.36" />
+  </ItemGroup>
+
+</Project>
